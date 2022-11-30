@@ -4,8 +4,7 @@ import {
     MDBNavbarBrand,
     MDBNavbarLink,
     MDBNavbarItem,
-    MDBNavbarNav,
-    MDBCollapse
+    MDBNavbarNav
   } from 'mdb-react-ui-kit';
 
 function NavBar() {
