@@ -3,8 +3,6 @@ class ApplicationController < ActionController::API
 
     rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
     rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
-
-    respond_to :json
     
     private
   
