@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import RoutesContainer from './components/RoutesContainer';
 import NavBar from './components/NavBar';
-import Body from './components/Body';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,12 +17,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Switch>
-      <Route exact path='/'><Body /></Route>
-      <Route path='/projects'><Projects /></Route>
-      <Route path='/contact'><Contact /></Route>
-      </Switch>
-      <h1>Page Count: {count}</h1>
+      <RoutesContainer />
+      {/* <h1>Page Count: {count}</h1> */}
     </div>
   );
 }

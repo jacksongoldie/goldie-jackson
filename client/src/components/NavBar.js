@@ -4,6 +4,7 @@ import {
     MDBCollapse,
     MDBNavbar,
     MDBNavbarBrand,
+    MDBNavbarItem,
     MDBNavbarLink,
     MDBNavbarToggler,
     MDBIcon,
@@ -13,7 +14,7 @@ import {
 function NavBar() {
     const [showBasic, setShowBasic] = useState(false);
   return (
-    <div>
+    <div style={{ margin:'.5%'}}>
         <MDBNavbar expand='lg' light style={{ backgroundColor:'#fbeef5' }}>
         <MDBContainer fluid>
             <MDBNavbarBrand className="fw-bold">Goldie Jackson</MDBNavbarBrand>
@@ -29,13 +30,15 @@ function NavBar() {
         
         <MDBCollapse navbar show={showBasic}>
         <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                <MDBNavbarLink active aria-current='page' href='/'>
+              <MDBNavbarItem>
+                <MDBNavbarLink  aria-current='page' href='/'>
                     Home
                 </MDBNavbarLink>
-                <MDBNavbarLink active aria-current='page' href='/projects'>
+              </MDBNavbarItem>
+                <MDBNavbarLink  aria-current='page' href='/projects'>
                     Projects
                 </MDBNavbarLink>
-                <MDBNavbarLink active aria-current='page' href='/contact'>
+                <MDBNavbarLink  aria-current='page' href='/contact'>
                     Contact
                 </MDBNavbarLink>
             </MDBNavbarNav>
