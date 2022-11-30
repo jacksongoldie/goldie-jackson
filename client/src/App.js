@@ -5,7 +5,6 @@ import NavBar from './components/NavBar';
 import Body from './components/Body';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,7 +23,6 @@ function App() {
       <Route path='/projects'><Projects /></Route>
       <Route path='/contact'><Contact /></Route>
       </Switch>
-      <Footer />
       <h1>Page Count: {count}</h1>
     </div>
   );
