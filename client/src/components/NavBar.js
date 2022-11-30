@@ -16,7 +16,7 @@ function NavBar() {
     <div>
         <MDBNavbar expand='lg' light style={{ backgroundColor:'#fbeef5' }}>
         <MDBContainer fluid>
-            <MDBNavbarBrand>Goldie Jackson</MDBNavbarBrand>
+            <MDBNavbarBrand className="fw-bold">Goldie Jackson</MDBNavbarBrand>
         
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
