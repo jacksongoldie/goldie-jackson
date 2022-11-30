@@ -16,6 +16,7 @@ function Contact() {
 
   function handleSubmit(e){
     e.preventDefault()
+    setMessage('')
     fetch(`/contacts`,{
       method: 'POST',
       headers: {
@@ -44,8 +45,8 @@ function Contact() {
             <MDBCheckbox name='flexCheck' value={formData.subscribe} id='flexCheckChecked' onChange={()=>setFormData({...formData, subscribe: !formData.subscribe})} label='I agree to receive email updates.' defaultChecked />
             <MDBBtn type='Submit' style={{ marginTop:'.5em'}}>Submit</MDBBtn>
           </form>
-          {message ? <p>{message}</p> : null}
         </div>
+        {message ? <p>{message}</p> : null}
     </div>
   )
 };
