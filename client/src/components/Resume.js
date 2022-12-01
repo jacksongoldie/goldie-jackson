@@ -71,7 +71,7 @@ function Resume() {
         }
     ]
   return (
-    <div style={{ margin:'10%' }} >
+    <div style={{ marginLeft:'30%', marginRight:'30%', marginTop:'5%' }} >
         <div>
         <h6 className='p-2 border-bottom'>Experience</h6>
       <MDBListGroup className='mb-4'>
