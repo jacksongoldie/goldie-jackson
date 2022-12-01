@@ -4,12 +4,12 @@ function Resume() {
   return (
     <div>
         <div style={{ minWidth: '22rem' }}>
-      <h6 className='bg-light p-2 border-top border-bottom'>Marketing team</h6>
+      <h6 className='bg-light p-2 border-top border-bottom'>Preferred Tools</h6>
       <MDBListGroup light className='mb-4'>
         <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
           <div className='d-flex align-items-center'>
             <img
-              src='https://mdbootstrap.com/img/new/avatars/8.jpg'
+              src='https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'
               alt=''
               style={{ width: '45px', height: '45px' }}
               className='rounded-circle'
