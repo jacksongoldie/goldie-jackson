@@ -13,7 +13,8 @@ function Projects() {
 
   const cards = projects.map((p) => <ProjectCard project={p} key={p.id} />)
   return (
-    <div>
+    <div style={{ margin: '10%'}}>
+      <p>Projects completed while attending Flatiron Software Engineering Program</p>
       {cards}
     </div>
   )

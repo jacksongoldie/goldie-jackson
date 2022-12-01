@@ -2,7 +2,7 @@ import { MDBBtn, MDBIcon, MDBBtnGroup } from 'mdb-react-ui-kit';
 
 function SideBar() {
   return (
-    <div style={{ marginRight:'95%'}}>
+    <div style={{ marginRight:'95%', marginTop: '10%'}}>
       <MDBBtnGroup vertical>
         <MDBBtn tag='a' floating color='none' href="https://www.linkedin.com/in/goldie-jackson-951b57229/" title='LinkedIn' target="_blank" rel="noreferrer noopener">
           <MDBIcon fab icon='linkedin-in' size='xl' />

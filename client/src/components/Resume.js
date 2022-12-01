@@ -1,99 +1,114 @@
 import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
 
 function Resume() {
+
+    const frontend = [
+        { 
+            name: 'React', 
+            image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K'
+        },
+        {
+            name: 'Javascript',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png'
+        },
+        {
+            name: 'HTML5',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669907880/html_vv7xmb.png'
+        },
+        {
+            name: 'CSS',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669907839/css_318-698167_cmftyl.webp'
+        },
+        {
+            name: 'Bootstrap',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669907764/bootstrap-logo_yzdgwk.png'
+        },
+        {
+            name: 'MDBootstrap',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669907715/mdb_tdxpxh.jpg'
+        }
+    ]
+
+    const backend = [
+        {
+            name: 'Ruby on Rails',
+            image: 'https://www.edureka.co/blog/wp-content/uploads/2019/02/What-is-Ruby-on-Rails-1.png'
+        },
+        {
+            name: 'PostgresSQL',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png'
+        },
+        {
+            name: 'SQLite',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669908014/sqlite_ygcoxi.jpg'
+        },
+        {
+            name: 'Sinatra',
+            image: 'https://cdn.freebiesupply.com/logos/large/2x/sinatra-logo-png-transparent.png'
+        }
+    ]
+
+    const tools = [
+        {
+            name: 'postman',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669907497/post_nqqpfy.png'
+        },
+        {
+            name: 'github',
+            image: 'https://cdn-icons-png.flaticon.com/512/25/25231.png'
+        },
+        {
+            name: 'Wordpress',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/2048px-WordPress_blue_logo.svg.png'
+        },
+        {
+            name: 'cPanel',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1Orz8MDwOF1ENnYn2J2HU4r4hNox4EDFsBtUuzLYr_jeJAzJuOHgmyE4D_xS_qfmmiE&usqp=CAU' 
+        },
+        {
+            name: 'HostGator',
+            image: 'https://res.cloudinary.com/dsplrsuko/image/upload/v1669909118/hostg_mizmdd.png'
+        }
+    ]
   return (
-    <div>
-        <div style={{ minWidth: '22rem' }}>
-      <h6 className='bg-light p-2 border-top border-bottom'>Preferred Tools</h6>
-      <MDBListGroup light className='mb-4'>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
+    <div style={{ margin:'10%' }} >
+        <div>
+        <h6 className='p-2 border-bottom'>Experience</h6>
+      <MDBListGroup className='mb-4'>
+        <MDBListGroupItem
+        className='d-flex justify-content-center align-items-center'>
+        {frontend.map((f) => <div key={f.name} className='d-flex align-items-center'>
             <img
-              src='https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png'
-              alt=''
+              src={f.image}
+              alt={f.name} 
+              title={f.name} 
               style={{ width: '45px', height: '45px' }}
               className='rounded-circle'
             />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>John Doe</p>
-              <p className='text-muted mb-0'>john.doe@gmail.com</p>
-            </div>
-          </div>
+          </div>)}
         </MDBListGroupItem>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
+        
+        <MDBListGroupItem className='d-flex justify-content-center align-items-center'>
+        {backend.map((b) => <div key={b.name} className='d-flex align-items-center'>
             <img
-              src='https://mdbootstrap.com/img/new/avatars/6.jpg'
-              alt=''
+              src={b.image}
+              alt={b.name}  
+              title={b.name}
               style={{ width: '45px', height: '45px' }}
               className='rounded-circle'
             />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>Alex Ray</p>
-              <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-            </div>
-          </div>
+          </div>)}
         </MDBListGroupItem>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
+        <MDBListGroupItem className='d-flex justify-content-center align-items-center'>
+        {tools.map((t) => <div key={t.name} className='d-flex align-items-center'>
             <img
-              src='https://mdbootstrap.com/img/new/avatars/7.jpg'
-              alt=''
+              src={t.image}
+              alt={t.name} 
+              title={t.name}
               style={{ width: '45px', height: '45px' }}
               className='rounded-circle'
             />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>Kate Hunington</p>
-              <p className='text-muted mb-0'>kate.hunington@gmail.com</p>
-            </div>
-          </div>
-        </MDBListGroupItem>
-      </MDBListGroup>
-
-      <h6 className='bg-light p-2 border-top border-bottom'>Marketing team</h6>
-
-      <MDBListGroup light className='mb-4'>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
-            <img
-              src='https://mdbootstrap.com/img/new/avatars/9.jpg'
-              alt=''
-              style={{ width: '45px', height: '45px' }}
-              className='rounded-circle'
-            />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>Soraya Letto</p>
-              <p className='text-muted mb-0'>soraya.letto@gmail.com</p>
-            </div>
-          </div>
-        </MDBListGroupItem>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
-            <img
-              src='https://mdbootstrap.com/img/new/avatars/11.jpg'
-              alt=''
-              style={{ width: '45px', height: '45px' }}
-              className='rounded-circle'
-            />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>Zeynep Dudley</p>
-              <p className='text-muted mb-0'>zeynep.dudley@gmail.com</p>
-            </div>
-          </div>
-        </MDBListGroupItem>
-        <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
-          <div className='d-flex align-items-center'>
-            <img
-              src='https://mdbootstrap.com/img/new/avatars/15.jpg'
-              alt=''
-              style={{ width: '45px', height: '45px' }}
-              className='rounded-circle'
-            />
-            <div className='ms-3'>
-              <p className='fw-bold mb-1'>Ayat Black</p>
-              <p className='text-muted mb-0'>ayat.black@gmail.com</p>
-            </div>
-          </div>
+          </div>)}
         </MDBListGroupItem>
       </MDBListGroup>
     </div>

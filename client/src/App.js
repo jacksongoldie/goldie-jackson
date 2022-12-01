@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import RoutesContainer from './components/RoutesContainer';
 import NavBar from './components/NavBar';
-import Resume from './components/Resume';
 
 
 
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
       <NavBar />
       <RoutesContainer />
-      <Resume />
       {/* <h1>Page Count: {count}</h1> */}
     </div>
   );

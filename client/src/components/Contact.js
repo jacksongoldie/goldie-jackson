@@ -43,7 +43,7 @@ function Contact() {
   }
 
   return (
-    <div style={{ margin:'.5%' }}>
+    <div style={{ margin:'10%' }}>
         Contact Me
         <div style={{ width:'75%', margin:'auto' }}>
           <form onSubmit={handleSubmit}>
