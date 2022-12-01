@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
 
   return (
     <div>
-      <MDBRow className='justify-content-center'>
+      <MDBRow className='d-flex justify-content-center align-items-center'>
       <MDBCol>
       <MDBCard className='mb-3' style={{ margin: '5%'}}>
         {project.image ? <MDBCardImage position='top' src={project.image} alt='...' /> : null }
