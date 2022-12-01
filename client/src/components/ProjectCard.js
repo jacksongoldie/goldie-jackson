@@ -1,6 +1,8 @@
 import {
   MDBCard,
   MDBCardBody,
+  MDBBtn,
+  MDBBtnGroup,
   MDBCardTitle,
   MDBCardText,
   MDBCardImage,
@@ -21,9 +23,11 @@ function ProjectCard({ project }) {
           <MDBCardText>
             {project.description}
           </MDBCardText>
-          <MDBCardText>
-            <small className='text-muted'>Last updated 3 mins ago</small>
-          </MDBCardText>
+          <MDBBtnGroup>
+          {project.deploy_url ? <MDBBtn style={{margin:'1em', backgroundColor: 'pink', color:'black'}} tag='a' href={project.deploy_url} title='View App' target='_blank' >Live</MDBBtn> : null}
+          {project.video_url ? <MDBBtn style={{margin:'1em', backgroundColor: 'pink', color:'black'}} tag='a' href={project.video_url} title='Watch Demo' target='_blank' >Video</MDBBtn> : null}
+          {project.github_url ? <MDBBtn style={{margin:'1em', backgroundColor: 'pink', color:'black'}} tag='a' href={project.github_url} title='View Code' target='_blank' >Code</MDBBtn> : null}
+          </MDBBtnGroup>
         </MDBCardBody>
       </MDBCard>
       </MDBCol>
