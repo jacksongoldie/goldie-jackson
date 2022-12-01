@@ -1,11 +1,13 @@
 class ContactsController < ApplicationController
     def create
+        
         user = User.find_by(email: contact_params[:user_attributes][:email])
-debugger
+
         if !user
-            user = User.create!(name: contact_params[:user_attributes][:name], email: contact_params[:user_attributes][:email], subscribe: contact_params[:subscribe])
+            user = User.create!(name: contact_params[:user_attributes][:name], email: contact_params[:user_attributes][:email])
             user.contacts.create!(message: contact_params[:message])
         else
+            user.update!(name: contact_params[:user_attributes][:name])
             user.contacts.create!(message: contact_params[:message])
         end
 
@@ -15,6 +17,6 @@ debugger
     private
 
     def contact_params
-        params.require(:contact).permit(:message, :subscribe, user_attributes: [:name, :email])
+        params.require(:contact).permit(:message, user_attributes: [:name, :email])
     end
 end
