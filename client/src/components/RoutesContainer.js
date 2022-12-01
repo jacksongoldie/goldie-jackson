@@ -8,7 +8,7 @@ function RoutesContainer() {
     <div>
     <Switch>
       <Route exact path='/'><Body /></Route>
-      <Route path='/projects'><Projects /></Route>
+      <Route path='/projects-list'><Projects /></Route>
       <Route path='/contact'><Contact /></Route>
       </Switch>
     </div>

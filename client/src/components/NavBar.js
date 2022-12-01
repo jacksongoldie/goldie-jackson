@@ -35,7 +35,7 @@ function NavBar() {
                     Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
-                <MDBNavbarLink  aria-current='page' href='/projects'>
+                <MDBNavbarLink  aria-current='page' href='/projects-list'>
                     Projects
                 </MDBNavbarLink>
                 <MDBNavbarLink  aria-current='page' href='/contact'>
