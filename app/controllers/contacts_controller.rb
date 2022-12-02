@@ -1,4 +1,9 @@
 class ContactsController < ApplicationController
+
+    def index
+        render json: Contact.all, include: :user, status: :ok
+    end
+
     def create
         
         user = User.find_by(email: contact_params[:user_attributes][:email])
