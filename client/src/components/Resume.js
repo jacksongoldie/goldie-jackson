@@ -76,7 +76,7 @@ function Resume() {
         <h6 className='p-2 border-bottom'>Experience</h6>
       <MDBListGroup className='mb-4'>
         <MDBListGroupItem
-        className='d-flex justify-content-center align-items-center'>
+        className='d-flex justify-content-center align-items-center' noBorders>
         {frontend.map((f) => <div key={f.name} className='d-flex align-items-center'>
             <img
               src={f.image}
@@ -88,7 +88,7 @@ function Resume() {
           </div>)}
         </MDBListGroupItem>
         
-        <MDBListGroupItem className='d-flex justify-content-center align-items-center'>
+        <MDBListGroupItem className='d-flex justify-content-center align-items-center' noBorders>
         {backend.map((b) => <div key={b.name} className='d-flex align-items-center'>
             <img
               src={b.image}
@@ -99,7 +99,7 @@ function Resume() {
             />
           </div>)}
         </MDBListGroupItem>
-        <MDBListGroupItem className='d-flex justify-content-center align-items-center'>
+        <MDBListGroupItem className='d-flex justify-content-center align-items-center' noBorders>
         {tools.map((t) => <div key={t.name} className='d-flex align-items-center'>
             <img
               src={t.image}
