@@ -6,7 +6,7 @@ function Projects() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
-    fetch(`/projects`)
+    fetch(`http://goldie-jackson.onrender/projects`)
     .then(r=>r.json())
     .then(setProjects)
   }, [])
