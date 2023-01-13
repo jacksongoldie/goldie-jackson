@@ -49,7 +49,7 @@ function Projects() {
   return (
     <div style={{ margin: '10%'}}>
       <p>Projects completed while attending Flatiron Software Engineering Program</p>
-      <p style={{ fontStyle:'italic', fontSize:'small' }}>All projects are my own. Projects databases are deployed using Render.com and MockApi.io and may need time to load. Use "user" as your username and "goldie" as your password to explore any app!</p>
+      <p style={{ fontStyle:'italic', fontSize:'small' }}>All projects are my own. Projects databases are deployed using Render.com and MockApi.io and may need time to load.</p>
       {cards}
     </div>
   )
