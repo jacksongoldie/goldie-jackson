@@ -1,4 +1,15 @@
 import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
+import { motion } from "framer-motion"
+
+export const MyComponent = () => (
+  <motion.div
+    animate={{
+      scale: [1, 2, 2, 1, 1],
+      rotate: [0, 0, 270, 270, 0],
+      borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+    }}
+  />
+)
 
 function Resume() {
 
@@ -71,7 +82,7 @@ function Resume() {
         }
     ]
   return (
-    <div style={{ marginLeft:'30%', marginRight:'30%', marginTop:'5%' }} >
+    <div style={{ marginLeft:'30%', marginRight:'30%', marginTop:'5%' }} data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="slide-out-right" >
         <div>
         <h6 className='p-2 border-bottom'>Experience</h6>
       <MDBListGroup className='mb-4'>
@@ -87,7 +98,6 @@ function Resume() {
             />
           </div>)}
         </MDBListGroupItem>
-        
         <MDBListGroupItem className='d-flex justify-content-center align-items-center' noBorders>
         {backend.map((b) => <div key={b.name} className='d-flex align-items-center'>
             <img

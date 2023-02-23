@@ -16,10 +16,10 @@ function Projects() {
     {
         "id": 1,
         "title": "Bookshelf",
-        "description": "An app for sharing what books you've been reading to help others find characters more like them! This project uses a React frontend with a Rails backend and Material Design Bootstrap for styling. Notable gems used are Devise for auth and Cloudinary for image uploading.",
+        "description": "An app for sharing what books you've been reading to help others find characters more like them! This project uses a React frontend with a Rails backend and Material Design Bootstrap for styling. Notable gems used are Devise for auth and Cloudinary for image uploading. This project is hosted for free on Render.com and may need time to load the server for the app.",
         "languages": null,
         "image": "https://res.cloudinary.com/dsplrsuko/image/upload/v1669850725/bookshelf_dhwliu.png",
-        "deploy_url": "https://bookshelf.goldie-jackson.com/",
+        "deploy_url": "https://bookshelf-ghnp.onrender.com/",
         "video_url": "",
         "github_url": "https://github.com/jacksongoldie/bookshelf"
     },
@@ -36,10 +36,10 @@ function Projects() {
     {
         "id": 3,
         "title": "PinTube",
-        "description": "One of my earlier projects, PinTube is a video collection tool allowing users to input information about a video, including it's YouTube url, to be displayed on the Homepage. I've collected some of my favorite meditation and low impact workout videos. ",
+        "description": "One of my first projects, PinTube is a video collection tool allowing users to input information about a video, including it's YouTube url, to be displayed on the Homepage. I've collected some of my favorite meditation and low impact workout videos. ",
         "languages": null,
         "image": "https://user-images.githubusercontent.com/82850134/142435693-b4d611dc-da51-4891-bc4b-922e2bdbe407.png",
-        "deploy_url": "https://pintube.goldie-jackson.com",
+        "deploy_url": "",
         "video_url": "https://youtu.be/jQnQ5iH4E5M",
         "github_url": "https://github.com/jacksongoldie/pintok"
     }
@@ -49,7 +49,7 @@ function Projects() {
   return (
     <div style={{ margin: '10%'}}>
       <p>Projects completed while attending Flatiron Software Engineering Program</p>
-      <p style={{ fontStyle:'italic', fontSize:'small' }}>All projects are my own. Projects databases are deployed using Render.com and MockApi.io and may need time to load.</p>
+      {/* <p style={{ fontStyle:'italic', fontSize:'small' }}></p> */}
       {cards}
     </div>
   )

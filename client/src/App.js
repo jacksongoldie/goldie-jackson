@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <NavBar />
       <RoutesContainer />
-      {/* <h1>Page Count: {count}</h1> */}
     </div>
   );
 }

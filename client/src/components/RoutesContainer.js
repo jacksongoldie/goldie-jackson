@@ -1,16 +1,16 @@
 import Body from './Body';
 import Contact from './Contact';
 import Projects from './Projects';
-import { Switch, Route } from 'react-router';
+import { Routes, Route } from 'react-router';
 
 function RoutesContainer() {
   return (
     <div>
-    <Switch>
-      <Route exact path='/'><Body /></Route>
-      <Route path='/projects-list'><Projects /></Route>
-      <Route path='/contact'><Contact /></Route>
-      </Switch>
+    <Routes>
+      <Route exact path='/' element={<Body />} />
+      <Route path='/projects-list' element={<Projects />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
     </div>
   )
 };
