@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://goldie-jackson.com",
   "private": true,
-  "proxy": "http://localhost:3000",
+  "proxy": "https://goldie-jackson.onrender.com",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.5",
