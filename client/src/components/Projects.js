@@ -19,8 +19,8 @@ function Projects() {
         "description": "An app for sharing what books you've been reading to help others find characters more like them! This project uses a React frontend with a Rails backend and Material Design Bootstrap for styling. Notable gems used are Devise for auth and Cloudinary for image uploading. This project is hosted for free on Render.com and may need time to load the server for the app.",
         "languages": null,
         "image": "https://res.cloudinary.com/dsplrsuko/image/upload/v1669850725/bookshelf_dhwliu.png",
-        "deploy_url": "https://bookshelf-ghnp.onrender.com/",
-        "video_url": "",
+        "deploy_url": "",
+        "video_url": "https://youtu.be/oFHQcE9vPL4",
         "github_url": "https://github.com/jacksongoldie/bookshelf"
     },
     {
