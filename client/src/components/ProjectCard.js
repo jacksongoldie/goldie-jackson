@@ -9,15 +9,44 @@ import {
   MDBRow,
   MDBCol
 } from 'mdb-react-ui-kit';
+import HoverVideoPlayer from 'react-hover-video-player';
 
 function ProjectCard({ project }) {
+
+  console.log(project)
 
   return (
     <div>
       <MDBRow className='d-flex justify-content-center align-items-center'>
       <MDBCol>
       <MDBCard className='mb-3' style={{ margin: '5%'}}>
-        {project.image ? <MDBCardImage position='top' src={project.image} alt='...' /> : null }
+        
+        { 
+          project.on_hover_url ?
+         <HoverVideoPlayer
+         videoSrc={project.on_hover_url}
+          pausedOverlay={
+          <img
+            src={project.image}
+            alt=""
+            style={{
+              // Make the image expand to cover the video's dimensions
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }} /> }
+            crossOrigin="anonymous"
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
+            />
+         : 
+         <> 
+         {project.image ? <MDBCardImage position='top' src={project.image} alt='...' /> : null }
+         </>
+        }
         <MDBCardBody>
           <MDBCardTitle>{project.title}</MDBCardTitle>
           <MDBCardText>
