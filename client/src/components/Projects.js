@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import bookshelf from '../components/assets/bookshelf.mp4'
 
 function Projects() {
 
@@ -18,7 +19,7 @@ function Projects() {
         "description": "An app for sharing what books you've been reading to help others find characters more like them! This project uses a React frontend with a Rails backend and Material Design Bootstrap for styling. Notable gems used are Devise for auth and Cloudinary for image uploading.",
         "languages": null,
         "image": "https://res.cloudinary.com/dsplrsuko/image/upload/v1669850725/bookshelf_dhwliu.png",
-        "on_hover_url": "https://www.youtube.com/watch?v=jmUbb9jGpPg",
+        "on_hover_url": bookshelf,
         "video_url": "https://youtu.be/oFHQcE9vPL4",
         "github_url": "https://github.com/jacksongoldie/bookshelf"
     },

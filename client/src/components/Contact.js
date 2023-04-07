@@ -17,7 +17,7 @@ function Contact() {
   function handleSubmit(e){
     e.preventDefault()
     setResponse('')
-    fetch(`/contacts`,{
+    fetch(`https://goldie-jackson.onrender.com/contacts`,{
       method: 'POST',
       headers: {
         "Content-Type": "application/json",

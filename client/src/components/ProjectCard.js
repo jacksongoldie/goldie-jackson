@@ -11,31 +11,30 @@ import {
 } from 'mdb-react-ui-kit';
 import HoverVideoPlayer from 'react-hover-video-player';
 
-function ProjectCard({ project }) {
 
-  console.log(project)
+function ProjectCard({ project }) {
 
   return (
     <div>
       <MDBRow className='d-flex justify-content-center align-items-center'>
       <MDBCol>
-      <MDBCard className='mb-3' style={{ margin: '5%'}}>
+      <MDBCard className='mb-3' style={{ margin: '5%' }}>
         
         { 
           project.on_hover_url ?
          <HoverVideoPlayer
          videoSrc={project.on_hover_url}
-          pausedOverlay={
-          <img
-            src={project.image}
-            alt=""
-            style={{
-              // Make the image expand to cover the video's dimensions
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }} /> }
-            crossOrigin="anonymous"
+         crossOrigin="anonymous"
+          // pausedOverlay={
+          // <img
+          //   src={project.image}
+          //   alt=""
+          //   style={{
+          //     // Make the image expand to cover the video's dimensions
+          //     width: '100%',
+          //     height: '100%',
+          //     objectFit: 'cover',
+          //   }} /> }
             loadingOverlay={
               <div className="loading-overlay">
                 <div className="loading-spinner" />
